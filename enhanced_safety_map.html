@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_12d3e71e9ba005c3825dde632c074612 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_12d3e71e9ba005c3825dde632c074612" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_12d3e71e9ba005c3825dde632c074612 = L.map(
+                "map_12d3e71e9ba005c3825dde632c074612",
+                {
+                    center: [41.8781, -87.6298],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_39032b3bec5fa3d9a4aa9fc4bdf5433b = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_39032b3bec5fa3d9a4aa9fc4bdf5433b.addTo(map_12d3e71e9ba005c3825dde632c074612);
+        
+    
+            var marker_cluster_3849868d73a0135f67a0f824f61a9a6b = L.markerClusterGroup(
+                {}
+            );
+        
+    
+            var marker_c4770a45ba4e7a9442a2d2035e1a9ab4 = L.marker(
+                [41.881, -87.627],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_d7e4d75920570d5c7d39a1b9a578e1b0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_c4770a45ba4e7a9442a2d2035e1a9ab4.setIcon(icon_d7e4d75920570d5c7d39a1b9a578e1b0);
+        
+    
+        var popup_2492c13d2aac8346ece01bfbf306334e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44f7544865d7c4e3deafba331bb84ad4 = $(`<div id="html_44f7544865d7c4e3deafba331bb84ad4" style="width: 100.0%; height: 100.0%;">Location Type: School<br>Description: Safe for students</div>`)[0];
+                popup_2492c13d2aac8346ece01bfbf306334e.setContent(html_44f7544865d7c4e3deafba331bb84ad4);
+            
+        
+
+        marker_c4770a45ba4e7a9442a2d2035e1a9ab4.bindPopup(popup_2492c13d2aac8346ece01bfbf306334e)
+        ;
+
+        
+    
+    
+            var marker_f03532a624e8422790f041c5d334e572 = L.marker(
+                [41.892, -87.634],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_d3522b8b75cb79f742353bfd7b43e439 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f03532a624e8422790f041c5d334e572.setIcon(icon_d3522b8b75cb79f742353bfd7b43e439);
+        
+    
+        var popup_faf859175a5f2f0db0277c0a1e687318 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_18a6587469acf4f63cbdb68185e05a05 = $(`<div id="html_18a6587469acf4f63cbdb68185e05a05" style="width: 100.0%; height: 100.0%;">Location Type: Hospital<br>Description: Low Risk: Well-monitored</div>`)[0];
+                popup_faf859175a5f2f0db0277c0a1e687318.setContent(html_18a6587469acf4f63cbdb68185e05a05);
+            
+        
+
+        marker_f03532a624e8422790f041c5d334e572.bindPopup(popup_faf859175a5f2f0db0277c0a1e687318)
+        ;
+
+        
+    
+    
+            var marker_67405f6e7a58a6ee133216935ba417bd = L.marker(
+                [41.872, -87.62],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_e824e2bca9c0824569476313e32aa022 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_67405f6e7a58a6ee133216935ba417bd.setIcon(icon_e824e2bca9c0824569476313e32aa022);
+        
+    
+        var popup_4d63b60fb430988f6ac68937288ea65d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58cd2e8c42c8dc5b51209ac6e6a7aed6 = $(`<div id="html_58cd2e8c42c8dc5b51209ac6e6a7aed6" style="width: 100.0%; height: 100.0%;">Location Type: Park<br>Description: High Risk: Isolated area</div>`)[0];
+                popup_4d63b60fb430988f6ac68937288ea65d.setContent(html_58cd2e8c42c8dc5b51209ac6e6a7aed6);
+            
+        
+
+        marker_67405f6e7a58a6ee133216935ba417bd.bindPopup(popup_4d63b60fb430988f6ac68937288ea65d)
+        ;
+
+        
+    
+    
+            var marker_1b4ac341967c70a98cc20cd4caaf32cc = L.marker(
+                [41.85, -87.66],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_14bb108982041345d6556d13ac1d0ff1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1b4ac341967c70a98cc20cd4caaf32cc.setIcon(icon_14bb108982041345d6556d13ac1d0ff1);
+        
+    
+        var popup_ce53208519f974f8d00a097646a7f750 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_271f2198e84203927da111739a7b3b1d = $(`<div id="html_271f2198e84203927da111739a7b3b1d" style="width: 100.0%; height: 100.0%;">Location Type: Residential Area<br>Description: Moderate Risk: Recent incidents</div>`)[0];
+                popup_ce53208519f974f8d00a097646a7f750.setContent(html_271f2198e84203927da111739a7b3b1d);
+            
+        
+
+        marker_1b4ac341967c70a98cc20cd4caaf32cc.bindPopup(popup_ce53208519f974f8d00a097646a7f750)
+        ;
+
+        
+    
+    
+            var marker_13e9f50ba01fa38ba4aea9f81e4bfc12 = L.marker(
+                [41.86, -87.625],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_6ed7b22d437702083846e4ecba461308 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_13e9f50ba01fa38ba4aea9f81e4bfc12.setIcon(icon_6ed7b22d437702083846e4ecba461308);
+        
+    
+        var popup_4e13e5ee4fb36ae47d529148b60890ee = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_299fee4a0b9cba21920211aa7f6aa432 = $(`<div id="html_299fee4a0b9cba21920211aa7f6aa432" style="width: 100.0%; height: 100.0%;">Location Type: Commercial Area<br>Description: Safe during daytime</div>`)[0];
+                popup_4e13e5ee4fb36ae47d529148b60890ee.setContent(html_299fee4a0b9cba21920211aa7f6aa432);
+            
+        
+
+        marker_13e9f50ba01fa38ba4aea9f81e4bfc12.bindPopup(popup_4e13e5ee4fb36ae47d529148b60890ee)
+        ;
+
+        
+    
+    
+            var marker_86e18f79229cc02f61f97fa108aa5505 = L.marker(
+                [41.87, -87.645],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_7bd49cc5f7d7360fa10eb7c931608135 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_86e18f79229cc02f61f97fa108aa5505.setIcon(icon_7bd49cc5f7d7360fa10eb7c931608135);
+        
+    
+        var popup_2005cab5d63fa0485c22e453ca2e295a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0fb86c1619743ce54ca83a38f1efd8b8 = $(`<div id="html_0fb86c1619743ce54ca83a38f1efd8b8" style="width: 100.0%; height: 100.0%;">Location Type: Police Station<br>Description: Very Safe: Patrolled regularly</div>`)[0];
+                popup_2005cab5d63fa0485c22e453ca2e295a.setContent(html_0fb86c1619743ce54ca83a38f1efd8b8);
+            
+        
+
+        marker_86e18f79229cc02f61f97fa108aa5505.bindPopup(popup_2005cab5d63fa0485c22e453ca2e295a)
+        ;
+
+        
+    
+    
+            var marker_c8e44ed60b64b138246cbebc3ed3ce81 = L.marker(
+                [41.885, -87.61],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_28f4eea46a9a5040619e546adb934098 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c8e44ed60b64b138246cbebc3ed3ce81.setIcon(icon_28f4eea46a9a5040619e546adb934098);
+        
+    
+        var popup_071b70f00384cff91dbac3538f22632b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_456468d891b9c01ab36ebd2ac2230d88 = $(`<div id="html_456468d891b9c01ab36ebd2ac2230d88" style="width: 100.0%; height: 100.0%;">Location Type: Mall<br>Description: Moderate Risk: Crowded</div>`)[0];
+                popup_071b70f00384cff91dbac3538f22632b.setContent(html_456468d891b9c01ab36ebd2ac2230d88);
+            
+        
+
+        marker_c8e44ed60b64b138246cbebc3ed3ce81.bindPopup(popup_071b70f00384cff91dbac3538f22632b)
+        ;
+
+        
+    
+    
+            var marker_a838c93b38ac0371cb8bc2191f75ba1b = L.marker(
+                [41.895, -87.64],
+                {}
+            ).addTo(marker_cluster_3849868d73a0135f67a0f824f61a9a6b);
+        
+    
+            var icon_2957f1c9c5d0289ee3d4a8cdd488469c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a838c93b38ac0371cb8bc2191f75ba1b.setIcon(icon_2957f1c9c5d0289ee3d4a8cdd488469c);
+        
+    
+        var popup_bb728642d5ba47f7b2a3cd6370a5658c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c1c95f8177be43378895fcd56224e0b2 = $(`<div id="html_c1c95f8177be43378895fcd56224e0b2" style="width: 100.0%; height: 100.0%;">Location Type: Station<br>Description: Safe area with surveillance</div>`)[0];
+                popup_bb728642d5ba47f7b2a3cd6370a5658c.setContent(html_c1c95f8177be43378895fcd56224e0b2);
+            
+        
+
+        marker_a838c93b38ac0371cb8bc2191f75ba1b.bindPopup(popup_bb728642d5ba47f7b2a3cd6370a5658c)
+        ;
+
+        
+    
+    
+            marker_cluster_3849868d73a0135f67a0f824f61a9a6b.addTo(map_12d3e71e9ba005c3825dde632c074612);
+        
+    
+            var layer_control_0dfb7dd32bcc82d6b5db4e899d709426_layers = {
+                base_layers : {
+                    "openstreetmap" : tile_layer_39032b3bec5fa3d9a4aa9fc4bdf5433b,
+                },
+                overlays :  {
+                    "macro_element_3849868d73a0135f67a0f824f61a9a6b" : marker_cluster_3849868d73a0135f67a0f824f61a9a6b,
+                },
+            };
+            let layer_control_0dfb7dd32bcc82d6b5db4e899d709426 = L.control.layers(
+                layer_control_0dfb7dd32bcc82d6b5db4e899d709426_layers.base_layers,
+                layer_control_0dfb7dd32bcc82d6b5db4e899d709426_layers.overlays,
+                {"autoZIndex": true, "collapsed": true, "position": "topright"}
+            ).addTo(map_12d3e71e9ba005c3825dde632c074612);
+
+        
+</script>
+</html>
