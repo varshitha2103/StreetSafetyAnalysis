@@ -1,4 +1,4 @@
-#✅ Project Overview
+Project Overview
 
 A machine learning project aimed at evaluating street safety based on reported crimes, service requests, and traffic accidents.
 
